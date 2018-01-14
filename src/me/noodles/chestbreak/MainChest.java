@@ -58,7 +58,7 @@ public class MainChest extends JavaPlugin implements Listener {
 		if(!player.hasPermission("chest.open")){
 		   if (e.getInventory().getType() == InventoryType.CHEST) {
 		      e.setCancelled(true);
-	            player.sendMessage(ChatColor.RED + "You are not allowed to open this chest!");
+	            player.sendMessage(ChatColor.RED + "(!) You are not allowed to open this chest!");
 		   }
 		}
 	}
@@ -69,7 +69,7 @@ public class MainChest extends JavaPlugin implements Listener {
     	if(!player.hasPermission("chest.break")){
         if(e.getBlock().getType().equals(Material.CHEST));
         e.setCancelled(true);
-        player.sendMessage(ChatColor.RED + "You are not allowed to break this chest!");
+        player.sendMessage(ChatColor.RED + "(!) You are not allowed to break this chest!");
     }
  }
 
